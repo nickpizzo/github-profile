@@ -1,15 +1,17 @@
 import Backbone from 'backbone';
 import $ from 'jquery';
 import AboutView from './views/aboutView';
+import Profile from './profile';
 
 const Router = Backbone.Router.extend({
 	routes: {
-		'about': 'showAbout'
+		'': 'showAbout'
 	},
 
 	showAbout: function() {
-		const aboutView = new AboutView();
-		$('main').html(aboutView.render());
+		let profile = new Profile({login: 'grayswan'})
+		const aboutView = new AboutView({model: profile});
+		aboutView.render();
 
 	},
 	initialize: function() {
