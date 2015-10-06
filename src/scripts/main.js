@@ -1,5 +1,8 @@
 import $ from 'jquery';
+import Router from './router';
+
+
 
 $(() => {
-  // Ready!
+  new Router();
 });
