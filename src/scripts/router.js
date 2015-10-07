@@ -20,6 +20,10 @@ const Router = Backbone.Router.extend({
       model: profile
     });
     aboutView.render();
+
+    // handle nav
+    $('nav li').removeClass('active');
+    $('nav li.profile').addClass('active');
   },
 
   showRepos: function() {
@@ -28,6 +32,10 @@ const Router = Backbone.Router.extend({
       collection: repos
     });
     view.render();
+
+    // handle nav
+    $('nav li').removeClass('active');
+    $('nav li.repos').addClass('active');
   },
 
   initialize: function() {

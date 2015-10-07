@@ -9,6 +9,14 @@
 
 <body>
 	<header>
+		<h1>Github Mini</h1>
+		<nav>
+			<ul>
+				<li class="profile"><a href="#">Profile</a></li>
+				<li class="repos"><a href="#/repos">Repos</a></li>
+			</ul>
+		</nav>
+
 	</header>
 	<main>
 		<p>
@@ -24,13 +32,13 @@
 	</script>
 
 	<script id="aboutTemplate" type="text/template">
-		<div class="profile">
+		<section class="profile">
 			<img src="<%= avatar_url %>" height="200" alt="" />
 			<h2><%= name %></h2>
 			<h3><%= login %></h3>
 			<p class="location"><%= location %></p>
 			<p class="joined"><%= created_at %></p>
-		</div>
+		</section>
 	</script>
 	<script src="bundle.js" charset="utf-8"></script>
 </body>
