@@ -13,8 +13,8 @@ const Router = Backbone.Router.extend({
 		let profile = new Profile({login: 'victoralvarez84'})
 		const aboutView = new AboutView({model: profile});
 		aboutView.render();
-
 	},
+
 	initialize: function() {
 		console.log('initialize test');
 		Backbone.history.start();
