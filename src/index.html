@@ -9,7 +9,6 @@
 
 <body>
 	<header>
-
 	</header>
 	<main>
 		<p>
@@ -19,18 +18,19 @@
 	<footer>
 	</footer>
 
-	<script id="repoTemplate" type="text/template">
-		<ul id="repoList">
-			<%= repos %>
+	<script id="repoListTemplate" type="text/template">
+		<ul class="repoList">
 		</ul>
 	</script>
 
 	<script id="aboutTemplate" type="text/template">
-		<img src="<%= avatar_url %>" height="200" alt="" />
-		<h2><%= name %></h2>
-		<h3><%= login %></h3>
-		<p><%= location %></p>
-		<p><%= created_at %></p>
+		<div class="profile">
+			<img src="<%= avatar_url %>" height="200" alt="" />
+			<h2><%= name %></h2>
+			<h3><%= login %></h3>
+			<p class="location"><%= location %></p>
+			<p class="joined"><%= created_at %></p>
+		</div>
 	</script>
 	<script src="bundle.js" charset="utf-8"></script>
 </body>

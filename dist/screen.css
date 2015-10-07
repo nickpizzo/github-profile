@@ -351,3 +351,14 @@ table {
 td,
 th {
   padding: 0; }
+
+.profile {
+  text-align: center;
+  padding: 20px; }
+  .profile h2 {
+    margin-bottom: 0; }
+  .profile h3 {
+    margin: 0;
+    opacity: 0.5; }
+  .profile .location {
+    font-weight: bold; }

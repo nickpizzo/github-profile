@@ -5,7 +5,7 @@ import _ from 'underscore';
 const RepoView = Backbone.View.extend({
   template: _.template($('#repoTemplate').text()),
   render: function () {
-    _.each(this.)
+    // _.each(this.)
     $('main').html(this.template(this.model.attributes))
   },
 
