@@ -16,7 +16,6 @@
 				<li class="repos"><a href="#/repos">Repos</a></li>
 			</ul>
 		</nav>
-
 	</header>
 	<main>
 		<p>
@@ -25,6 +24,15 @@
 	</main>
 	<footer>
 	</footer>
+
+	<script id="repoTemplate" type="text/template">
+		<div class="lang"><%= language %></div>
+		<div class="name">
+			<a href="<%= url %>"><%= name %></a>
+		</div>
+		<div class="desc"><%= description %></div>
+
+	</script>
 
 	<script id="repoListTemplate" type="text/template">
 		<ul class="repoList">

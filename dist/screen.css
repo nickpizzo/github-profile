@@ -391,3 +391,26 @@ nav {
       nav ul li a {
         text-decoration: none;
         color: #333; }
+
+ul.repoList {
+  padding: 0; }
+  ul.repoList li {
+    list-style: none;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 1px solid #999; }
+    ul.repoList li .name {
+      font-size: 1.5em;
+      font-weight: bold; }
+      ul.repoList li .name a {
+        text-decoration: none;
+        color: #23b5e1; }
+    ul.repoList li .desc {
+      opacity: 0.6;
+      font-size: 0.8em; }
+    ul.repoList li .lang {
+      opacity: 0.5;
+      float: right;
+      font-size: 0.6em;
+      font-weight: bold;
+      padding: 10px; }
