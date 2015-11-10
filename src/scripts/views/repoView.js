@@ -6,8 +6,7 @@ const RepoView = Backbone.View.extend({
   template: _.template($('#repoTemplate').text()),
   tagName: 'li',
   render: function () {
-    this.$el.html(this.template(this.model.attributes))
-
+    this.$el.html(this.template(this.model.attributes));
     return this.$el;
   }
 });

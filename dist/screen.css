@@ -414,3 +414,16 @@ ul.repoList {
       font-size: 0.6em;
       font-weight: bold;
       padding: 10px; }
+
+#searchForm {
+  position: absolute;
+  top: 90px;
+  right: 50px; }
+  #searchForm #userSearch, #searchForm button {
+    border-radius: 4px;
+    border-style: none; }
+  #searchForm #userSearch {
+    height: 20px;
+    line-height: 20px; }
+  #searchForm button {
+    background-color: white; }
